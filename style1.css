@@ -1,0 +1,225 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+p{
+  font-family: 'Source Code Pro', monospace;
+}
+.codepro{
+  font-family: 'Source Code Pro', monospace;
+}
+.anton{
+  font-family: 'Anton', sans-serif;
+  
+}
+.rale{
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(0, 0%, 0%));
+/*  
+  display: flex;
+  justify-content: center; 
+ align-items: center;
+   min-height: 100vh; 
+  overflow: hidden; */  /* kaymaya engel oluyo */
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 30%;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 3rem;
+}
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+ /*  border: 1px solid white; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: #001d3d;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .hand.minute {
+  width: 7px;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+}
+
+.clock .hand.hour {
+  width: 10px;
+  height: 35%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* ---------------------------------------------- */
+h1, p {
+	margin: 0;
+
+	font-weight: bold;
+}
+
+.section {
+	min-height: 800px;
+	position: relative;
+	text-align: center;
+	/* font-family: sans-serif, arial; */
+	margin: 0;
+}
+
+.text-wr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#section10 {
+	background: #0000;
+	color: #0000;
+}
+
+#section1 {
+	background: #5c53aa;
+	color: #8d86c3;
+}
+
+#section2 {
+	background: #4bbfc3;
+	color: #81d2d5;
+}
+
+#section3 {
+	background: #283044;
+	color: #686e7c;
+}
+
+#section4 {
+ /*  background: linear-gradient(to right, hsl(0, 93%, 55%), hsl(0, 79%, 65%));
+ */
+     background: #ebf5ee;
+    color: #aeb9b9;
+
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+
+.title-top {
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+.title-bottom {
+	font-size: 30px;
+}
+
+.title-tx {
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.nav {
+	position: fixed; /*left: 50%;*/
+	width: 100%;
+	top: 20px;
+	z-index: 9;
+	padding-left: 10px;
+}
+
+.nav a {
+	padding: 7px 20px;
+	border-radius: 7px;
+	margin-right: 10px;
+	background: #001d3d;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-family: sans-serif, arial;
+	font-weight: 100;
+}
+
+.nav a.active {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.nav a:hover {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.fork-wr img {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+
+
