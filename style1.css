@@ -9,16 +9,12 @@
 p{
   font-family: 'Source Code Pro', monospace;
 }
-.codepro{
-  font-family: 'Source Code Pro', monospace;
-}
+
 .anton{
   font-family: 'Anton', sans-serif;
   
 }
-.rale{
-  font-family: 'Raleway', sans-serif;
-}
+
 
 body {
   background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(0, 0%, 0%));
